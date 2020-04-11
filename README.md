@@ -24,6 +24,6 @@ For linux you'll have to make sure that you have python and amixer installed. On
 
 ### Credits and thanks
 
-The remote media controller server uses files and bits of code from other great developers that I want acknowledge:
+The remote media controller server uses files and bits of code from some great developers that I want acknowledge:
 * The windows version uses the parts of the [java-media-keys](https://github.com/nsnave/java-media-keys) project by [Aidan Evans](https://github.com/nsnave)
 * The linux version uses a *very slightly* modified version of the [pymprisr](https://bitbucket.org/whitelynx/pymprisr/src/default/) project by [David Bronke](https://bitbucket.org/%7Bc4e753d5-fec0-4210-a96a-0876ffd92a09%7D/)
