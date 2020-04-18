@@ -1,6 +1,7 @@
 package com.jorge.cano.remote.media.control.remotemediacontrollerapi.controllers
 
 import commands.MediaKeys
+import commands.TrackPadEmulator
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable
 class RemoteController {
 
     val mediaKeys = MediaKeys()
+    val trackPadEmulator = TrackPadEmulator()
 
     @GetMapping("/playPause/{type}")
     fun playPause(@PathVariable("type") type: String?): ResponseEntity<String> {
@@ -72,6 +74,27 @@ class RemoteController {
     fun volumeDown(): ResponseEntity<String> {
 
         mediaKeys.volumeDown()
+        return Responses.defaultSuccess
+    }
+
+    @GetMapping("/moveMouse/{xVal}/{yVal}")
+    fun moveMouse(@PathVariable("xVal") xVal: Int?, @PathVariable("yVal")yVal: Int?): ResponseEntity<String> {
+
+        trackPadEmulator.moveMouse(xVal, yVal)
+        return Responses.defaultSuccess
+    }
+
+    @GetMapping("/leftClick")
+    fun leftClick(): ResponseEntity<String> {
+
+        trackPadEmulator.leftClick()
+        return Responses.defaultSuccess
+    }
+
+    @GetMapping("/rightClick")
+    fun rightClick(): ResponseEntity<String> {
+
+        trackPadEmulator.rightClick()
         return Responses.defaultSuccess
     }
 }
