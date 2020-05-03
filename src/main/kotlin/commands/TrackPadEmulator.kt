@@ -30,10 +30,10 @@ class TrackPadEmulator {
     }
 
     fun scrollUp() {
-        robot.mouseWheel(-1)
+        robot.mouseWheel(-5)
     }
 
     fun scrollDown() {
-        robot.mouseWheel(1)
+        robot.mouseWheel(5)
     }
 }
