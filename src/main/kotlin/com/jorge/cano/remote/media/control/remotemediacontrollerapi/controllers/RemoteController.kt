@@ -97,4 +97,18 @@ class RemoteController {
         trackPadEmulator.rightClick()
         return Responses.defaultSuccess
     }
+
+    @GetMapping("/scrollUp")
+    fun scrollUp(): ResponseEntity<String> {
+
+        trackPadEmulator.scrollUp()
+        return Responses.defaultSuccess
+    }
+
+    @GetMapping("/scrollDown")
+    fun scrollDown(): ResponseEntity<String> {
+
+        trackPadEmulator.scrollDown()
+        return Responses.defaultSuccess
+    }
 }
