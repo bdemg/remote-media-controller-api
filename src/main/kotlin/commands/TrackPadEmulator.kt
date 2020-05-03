@@ -29,11 +29,11 @@ class TrackPadEmulator {
         robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK)
     }
 
-    fun scrollUp() {
-        robot.mouseWheel(-5)
+    fun scrollUp(steps: Int) {
+        robot.mouseWheel(-steps)
     }
 
-    fun scrollDown() {
-        robot.mouseWheel(5)
+    fun scrollDown(steps: Int) {
+        robot.mouseWheel(steps)
     }
 }

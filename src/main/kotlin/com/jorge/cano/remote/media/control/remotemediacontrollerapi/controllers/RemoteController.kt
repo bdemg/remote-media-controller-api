@@ -98,17 +98,17 @@ class RemoteController {
         return Responses.defaultSuccess
     }
 
-    @GetMapping("/scrollUp")
-    fun scrollUp(): ResponseEntity<String> {
+    @GetMapping("/scrollUp/{steps}")
+    fun scrollUp(@PathVariable("steps") steps:Int): ResponseEntity<String> {
 
-        trackPadEmulator.scrollUp()
+        trackPadEmulator.scrollUp(steps)
         return Responses.defaultSuccess
     }
 
-    @GetMapping("/scrollDown")
-    fun scrollDown(): ResponseEntity<String> {
+    @GetMapping("/scrollDown/{steps}")
+    fun scrollDown(@PathVariable("steps") steps:Int): ResponseEntity<String> {
 
-        trackPadEmulator.scrollDown()
+        trackPadEmulator.scrollDown(steps)
         return Responses.defaultSuccess
     }
 }
