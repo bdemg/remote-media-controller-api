@@ -7,8 +7,9 @@ Currently the remote media controller server has the the following functionality
 * Increase, decrease and mute the volume on the host PC.
 * Play, pause and change tracks on the players that interface with media keys (like Spotify and VLC).
 * Play, pause and seek through video by emulating the spacebar and arrow keys.
+* Simulate your host PCs mouse movement and mouse buttons.
 
-This server was originally created to interface with the [remote-media-controller-app](https://github.com/bdemg/remote-media-controller-app) which you can download and install form [here]().
+This server was originally created to interface with the [remote-media-controller-app](https://github.com/bdemg/remote-media-controller-app) which you can download and install form [here](https://play.google.com/store/apps/details?id=controller.media.com.jorge.remote_media_controller).
 
 ### Downloads and usage
 
